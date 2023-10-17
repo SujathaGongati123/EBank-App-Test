@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="EBank App Test Suite" parallel="classes" thread-count="2">
+    <listeners>
+        <listener class-name="EBankAppReport"/>
+    </listeners>
+    <test name="LoginAndHomePageTest" >
+        <classes>
+            <class name="LoginPageTest" />
+            <class name="HomePageTest" />
+        </classes>
+    </test>
+</suite>
